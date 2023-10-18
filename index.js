@@ -13,7 +13,7 @@ async function connectToDatabase() {
     try {
         await mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true });
         console.log("Connected to the database!");
-        app.listen(3000, () => console.log("Server Up and running"));
+        app.listen(8888, () => console.log("Server Up and running"));
     } catch (error) {
         console.error("Error connecting to the database: " + error);
     }
