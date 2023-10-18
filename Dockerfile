@@ -9,7 +9,7 @@ RUN npm ci
 
 COPY . /index
 
-EXPOSE 3000
+EXPOSE 8888
 
 ARG DB_CONNECT
 
